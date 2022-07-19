@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-lvdeploy",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "vite前端自动化部署",
   "main": "index.js",
   "scripts": {},
@@ -17,7 +17,7 @@
     "url": "https://github.com/lvhao01/vite-plugin-lvdeploy/issues"
   },
   "homepage": "https://github.com/lvhao01/vite-plugin-lvdeploy#readme",
-  "devDependencies": {
+  "dependencies":{
     "archiver": "^5.3.1",
     "ssh2": "^1.11.0"
   }
