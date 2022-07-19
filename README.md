@@ -1,3 +1,4 @@
+[![OSCS Status](https://www.oscs1024.com/platform/badge/lvhao01/vite-plugin-lvdeploy.svg?size=small)](https://www.oscs1024.com/project/lvhao01/vite-plugin-lvdeploy?ref=badge_small)
 
 <h1 align="center">vite-plugin-lvdeploy</h1>
 <p align="center">前端自动化部署方案依赖</p>
