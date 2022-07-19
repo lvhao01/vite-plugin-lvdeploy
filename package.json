@@ -1,0 +1,26 @@
+{
+  "name": "vite-plugin-lvdeploy",
+  "version": "1.0.0",
+  "description": "前端自动化部署",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lvhao01/vite-plugin-lvdeploy.git"
+  },
+  "keywords": [
+    "自动部署"
+  ],
+  "author": "LvHao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lvhao01/vite-plugin-lvdeploy/issues"
+  },
+  "homepage": "https://github.com/lvhao01/vite-plugin-lvdeploy#readme",
+  "devDependencies": {
+    "archiver": "^5.3.1",
+    "ssh2": "^1.11.0"
+  }
+}
