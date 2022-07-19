@@ -1,11 +1,9 @@
 {
   "name": "vite-plugin-lvdeploy",
-  "version": "1.0.0",
-  "description": "前端自动化部署",
+  "version": "1.1.1",
+  "description": "vite前端自动化部署",
   "main": "index.js",
-  "scripts": {
-    "test": "test"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lvhao01/vite-plugin-lvdeploy.git"

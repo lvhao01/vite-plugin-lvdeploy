@@ -2,7 +2,10 @@
 let paperFileName = null;// 接收压缩文件名称参数
 let DeployConfig = null;//配置项
 
-export default function vitePluginLvdeploy(enforce) {
+
+
+module.exports = vitePluginLvdeploy;
+function vitePluginLvdeploy(enforce) {
   return {
     name: 'vite-plugin-lvdeploy',
     apply: 'build',
@@ -22,9 +25,11 @@ export default function vitePluginLvdeploy(enforce) {
     },
   };
 }
+module.exports = vitePluginLvdeploy
+vitePluginLvdeploy['default'] = vitePluginLvdeploy
 
-import fs from "fs"
-import archiver from "archiver";
+const fs = require('fs');
+const archiver = require('archiver');
 // 初始化SSH连接
 const ssh2 = require('ssh2');
 let conn = new ssh2.Client();
