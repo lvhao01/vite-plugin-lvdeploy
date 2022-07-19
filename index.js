@@ -10,8 +10,9 @@ function vitePluginLvdeploy(enforce) {
     name: 'vite-plugin-lvdeploy',
     apply: 'build',
     config(userConfig, env) {
+      console.log(userConfig)
       // 当前配置 userConfig 当前环境状态 env
-      paperFileName = userConfig.build.outDir;
+      paperFileName = userConfig.build.outDir || 'dist';
     },
     //  在服务启动前开始执行
     buildStart() {
@@ -43,7 +44,6 @@ let conn = new ssh2.Client();
  */
 function inquiry() {
 
-  console.log(`${__dirname}/${paperFileName}.zip`)
 
   // 创建文件输出流
   let output = fs.createWriteStream(`${__dirname}/${paperFileName}.zip`);

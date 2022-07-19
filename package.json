@@ -17,7 +17,7 @@
     "url": "https://github.com/lvhao01/vite-plugin-lvdeploy/issues"
   },
   "homepage": "https://github.com/lvhao01/vite-plugin-lvdeploy#readme",
-  "dependencies":{
+  "dependencies": {
     "archiver": "^5.3.1",
     "ssh2": "^1.11.0"
   }

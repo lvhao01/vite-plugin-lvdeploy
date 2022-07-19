@@ -42,6 +42,7 @@ plugins: [
 ## 注意
  - 当不输入0时只会打包zip包不会部署
  - serverpath参数路径 会自动检测是否存在不存在会创建目录 若存在会清空当前目录
+ - vite.config.js中若未配置 build.outDir（打包文件名夹名称） 将会使用默认值 'dist';
 
 ## 预览效果
 
