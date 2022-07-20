@@ -10,7 +10,6 @@ function vitePluginLvdeploy(enforce) {
     name: 'vite-plugin-lvdeploy',
     apply: 'build',
     config(userConfig, env) {
-      console.log(userConfig)
       // 当前配置 userConfig 当前环境状态 env
       paperFileName = userConfig.build.outDir || 'dist';
     },

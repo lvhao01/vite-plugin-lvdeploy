@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-lvdeploy",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "vite前端自动化部署",
   "main": "index.js",
   "scripts": {},
