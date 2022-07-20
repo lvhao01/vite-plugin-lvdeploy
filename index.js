@@ -46,7 +46,7 @@ function inquiry() {
 
 
   // 创建文件输出流
-  let output = fs.createWriteStream(`${__dirname}/${paperFileName}.zip`);
+  let output = fs.createWriteStream(`${paperFileName}.zip`);
   let archive = archiver('zip', {
     zlib: { level: 9 } // 设置压缩级别
   })
@@ -58,7 +58,7 @@ function inquiry() {
                   ${archive.pointer()} 字节,已完成压缩          
    ------------------------------------------------
   `);
-    deleteFolder(__dirname + "/" + paperFileName);// 删除文件夹
+    deleteFolder(paperFileName);// 删除文件夹
     detectionDeploy();// 检测部署
   })
 
@@ -151,8 +151,8 @@ function connect(serverConfig) {
     // 保证服务器下当前目录存在 
     useExec(`mkdir -p ${serverConfig.serverpath}/ && cd ${serverConfig.serverpath}/ && rm -rf *`).then(() => {
       conn.sftp((err, sftp) => {
-        sftp.fastPut(`${__dirname}/${paperFileName}.zip`, `${serverConfig.serverpath}/${paperFileName}.zip`, {}, (err, result) => {
-          console.log("\x1B[32m%s\x1b[0m", `文件上传完成 : ${__dirname}/${paperFileName}.zip 已部署服务器 ${serverConfig.serverpath}/${paperFileName}.zip`);
+        sftp.fastPut(`${paperFileName}.zip`, `${serverConfig.serverpath}/${paperFileName}.zip`, {}, (err, result) => {
+          console.log("\x1B[32m%s\x1b[0m", `文件上传完成 : ${paperFileName}.zip 已部署服务器 ${serverConfig.serverpath}/${paperFileName}.zip`);
           // 解压文件停止连接数据库
           useExec(`
               cd ${serverConfig.serverpath}/ && \
